@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+
+</head>
+
+<body>
+	<a href="http://10.100.109.86/I4.0/mes4/EN/mes4.php?content=order&subcontent=newOrder&PNo=607">ORDER</a>
+	<button id="button1" onclick="button1_click('hello');">버튼1</button>
+	<button onclick="location.href='http://naver.com'">주문하기</button>
+
+	<a href="http://www.naver.com"><img src="190617_botton-01.png" align="left" hspace="1" vspace="1", width="20%"/></a>
+
+		<!-- jquery 를 사용하기 위해 jquery 파일을 로드 -->
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script>
+$(document).ready(function(e) {
+/* a요소를 클릭 했을 시 */
+    $('a').click(function(){
+/* iframe 요소의 src 속성값을 a 요소의 data-url 속성값으로 변경 */ 
+        $('#iframe').attr('src',$(this).attr('data-url'));
+        })
+});
+</script>
+	<a  data-url="http://naver.com">네이버</a>
+	<iframe id="iframe" src="" scrolling="no" style="visibility:hidden;position:absolute;width:0;height:0;"></iframe>
+
+
+
+	<a href="http://www.google.com" id="google">Google</a>
+<script>
+$('#google').click(function(e) { e.preventDefault(); window.open(this.href); });
+
+	<a href="#" onclick="window.open('http://www.makeshop.co.kr/', 'makeshop', '....');">
+
+	<a href="javascript:;" onclick="....">
+</script>
+</body>
+</html>
