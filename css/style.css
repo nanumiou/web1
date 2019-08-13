@@ -8,8 +8,8 @@
         font-size: 3em;
         box-sizing: content-box;
         background-color: #1C1C1C;
-        height: 150px;
-        line-height: 150px;
+        height: 120px;
+        line-height: 120px;
         text-align: center;
         position: sticky;
         top: 0;
@@ -20,9 +20,9 @@
       .desc {
         margin: 10px;
         border: 10px;       
-        color: white;
+        color: black;
       }
-      /*audio*/
+      /*audio*/      
       .body_audio {
         margin: 10px;
       }
@@ -40,23 +40,48 @@
       }
       */
       .bb {
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
         box-sizing: border-box;
-        background-color: #BBDEFB;
-        height: 200px;
-        line-height: 90px;
+        background-color: ;
+        height: 150px;
+        line-height: 75px;
         text-align: left;
-        font-size: 3.5em;
+        font-size: 2.5em;
         margin: 0px;
         padding: 0px;
-        border: 10px solid #dddddd;
+        border: px solid #dddddd;
+        font-family: "arial";
       }
       .dot {
-        height: 100px;
-        width: 100px;
-        background-color: #6E6E6E;
-        border-radius: 100%;
+        height: 80px;
+        width: 80px;
+        background-color: #2E64FE;
+        border-radius: 50%;
         display: inline-block;
         margin-right: 20px;
         margin-left: 20px;
         margin-top: 35px;
       }
+
+
+
+main {
+        animation: .5s bodyPopIn ease-in-out;
+    }
+
+    @keyframes bodyPopIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+      }
+    }
+
+    body {
+      
+      font-family: 'Open Sans', sans-serif;
+    }
