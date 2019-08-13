@@ -1,0 +1,81 @@
+body {
+	background-color: black;
+	color: white;	
+}
+
+.btn {
+	cursor: pointer;
+}
+
+.clicked {
+	color: #A4A4A4;
+}
+
+
+.form,
+.grettings {
+	display: none;
+}
+
+.showing {
+	display: block;
+}
+
+.bgImage{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	animation: fadeIn 1s linear;
+	filter: brightness(40%);
+}
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.title_1 {
+	display: flex;
+	height: 90vh;
+	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
+}
+.title_2 {
+	font-size: 2.5em;
+	font-weight: bold;
+	font-family: arial;
+
+	
+}
+.weather {
+	text-align: right;
+}
+
+main {
+	  		animation: .5s bodyPopIn ease-in-out;
+		}
+
+		@keyframes bodyPopIn {
+	  		from {
+	    		opacity: 0;
+	   			transform: translateY(10px);
+	  		}
+	  		to {
+	    		opacity: 1;
+	    		transform: none;
+	 		}
+		}
+
+.button1 {
+	width: 150px;
+	height: 38px;
+	font-size: 1.2em;
+	color: white;
+	background-color: #2E9AFE;
+}
