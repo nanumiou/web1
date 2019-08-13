@@ -44,8 +44,8 @@
         border-bottom: 1px solid #ebebeb;
         box-sizing: border-box;
         background-color: ;
-        height: 150px;
-        line-height: 75px;
+        height: 160px;
+        line-height: 80px;
         text-align: left;
         font-size: 2.5em;
         margin: 0px;
@@ -67,13 +67,13 @@
 
 
 main {
-        animation: .5s bodyPopIn ease-in-out;
+        animation: 1s bodyPopIn ease-in-out;
     }
 
     @keyframes bodyPopIn {
         from {
           opacity: 0;
-          transform: translateY(10px);
+          transform: translateY(15px);
         }
         to {
           opacity: 1;
