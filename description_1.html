@@ -1,100 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">    
     <title>SMIC Audio Guide</title>
-    <style>
-        body {
-            margin: 0px;
-        }
-        
-        .cb {
-            font-size: 6vmin;
-            box-sizing: content-box;
-            background-color: #1C1C1C;
-            height: 50px;
-            line-height: 50px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            color: white;
-            opacity: 1; 
-            z-index: 10;       
-        }
-        .tab-bar {
-            background-color: #f7f7f7;
-            position: fixed;
-            width: 100%;  
-            bottom: 0;
-            display: flex;
-            justify-content: space-between;
-            border-top: 1px solid #c1c1c1;
-            padding: 10px 0px 10px 0px;
-            flex-direction: column;
-            overflow: auto;
-        }
-        .header_1 {
-            height: 100%;
-            text-align: center;          
-        }
-        .header_2 {
-            height: 100%;
-            width: 100%;
-            text-align: center;
-        }
+	<style type="text/css">
+		html, body {
+		    margin:0;
+		    
+		    height:100%;
+		    min-height:100%;
+		    min-width: 100%;
+		}
+		body {
+		  display: flex;
+		  flex-direction: column;
+		  
+
+		}
+		.header {
+		  flex: 1;
+		  background-color: #1C1C1C;
+		  color: white;
+		  text-align: center;
+		  font-size: 6vmin;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+		.hear_item {
+			flex:10;
+		}
+		.article {
+			
+		  	flex: 7;
+		 	overflow-y: scroll;
+		  	padding: 13px;
+		  	font-size: 1.1em;
+
+		}
+		.footer {
+		  flex: 2;
+		  text-align: center;
+		  	
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+		.footer_item {
+			flex:10;
+			padding: 10px;
+			border-top: 1px solid #c1c1c1;
+
+						
+		}
+		
         audio {
             width: 100%; 
             display: block;
-        }
-        .cont_1 {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .description {
-            height: 500px;           
-            padding: 10px;            
-            opacity: 0.9;
-            z-index: -1;
-            font-size: 1.1em;
-        }
-        .cont_2 {
-            display: flex;
-            overflow: auto;
-        }
+        }            
+            
 
-    </style>
+	</style>
 </head>
-
-<body>
-    <div class="cb">
-      SMIC Demo Factory Tour
-    </div>
-    <div class="cont_2">
-        <div class="description">
-            이곳은 자동차 엔진에 들어가는 피스톤을 조립하고 검사하는 공정입니다. 모듈기반의 조립 라인을 기반으로 피스톤의 외관에 발생할 수 있는 마이크로 단위의 긁힘, 찍힘 등과 같은 불량 요소를 자동으로 검사하고 있습니다. 모듈기반의 설비는 산업용 표준 프로토콜과 산업용 유니버셜 커넥트를 기반으로 연결되어 있으며, 이곳에서 발생하는 데이터를 수집하여, 뒤쪽에 보이시는 바와 같이 가상 공장으로 구현해 놓았습니다. 위 화면은 게임엔진을 기반으로 구현하여 현실성 높은 가상 공장을 구현하였습니다. 실제 공장에서 발생한 데이터는 이곳으로 전송되며, 실시간으로 공장의 상태를 표현해 주고 있습니다. 옆쪽에 있는 시스템은 이곳 스마트제조혁신센터와 데이터를 연계하는 대표공장 동양피스톤의 공정이며, 데이터를 공유받아 쓰리디 시각화 시켜 놓고 있습니다.
+<body>  
+    <div class="header">
+    	<div class="header_item">SMIC Demo Factory Tour</div>
+	</div>
+    <div class="article">    	
+    	이곳은 자동차 엔진에 들어가는 피스톤을 조립하고 검사하는 공정입니다. 모듈기반의 조립 라인을 기반으로 피스톤의 외관에 발생할 수 있는 마이크로 단위의 긁힘, 찍힘 등과 같은 불량 요소를 자동으로 검사하고 있습니다. 모듈기반의 설비는 산업용 표준 프로토콜과 산업용 유니버셜 커넥트를 기반으로 연결되어 있으며, 이곳에서 발생하는 데이터를 수집하여, 뒤쪽에 보이시는 바와 같이 가상 공장으로 구현해 놓았습니다. 위 화면은 게임엔진을 기반으로 구현하여 현실성 높은 가상 공장을 구현하였습니다. 실제 공장에서 발생한 데이터는 이곳으로 전송되며, 실시간으로 공장의 상태를 표현해 주고 있습니다. 옆쪽에 있는 시스템은 이곳 스마트제조혁신센터와 데이터를 연계하는 대표공장 동양피스톤의 공정이며, 데이터를 공유받아 쓰리디 시각화 시켜 놓고 있습니다.
             <br /><br />
-            이곳은 자동차 엔진에 들어가는 피스톤을 조립하고 검사하는 공정입니다. 모듈기반의 조립 라인을 기반으로 피스톤의 외관에 발생할 수 있는 마이크로 단위의 긁힘, 찍힘 등과 같은 불량 요소를 자동으로 검사하고 있습니다. 모듈기반의 설비는 산업용 표준 프로토콜과 산업용 유니버셜 커넥트를 기반으로 연결되어 있으며, 이곳에서 발생하는 데이터를 수집하여, 뒤쪽에 보이시는 바와 같이 가상 공장으로 구현해 놓았습니다. 위 화면은 게임엔진을 기반으로 구현하여 현실성 높은 가상 공장을 구현하였습니다. 실제 공장에서 발생한 데이터는 이곳으로 전송되며, 실시간으로 공장의 상태를 표현해 주고 있습니다. 옆쪽에 있는 시스템은 이곳 스마트제조혁신센터와 데이터를 연계하는 대표공장 동양피스톤의 공정이며, 데이터를 공유받아 쓰리디 시각화 시켜 놓고 있습니다.        
-        </div>
+            이곳은 자동차 엔진에 들어가는 피스톤을 조립하고 검사하는 공정입니다. 모듈기반의 조립 라인을 기반으로 피스톤의 외관에 발생할 수 있는 마이크로 단위의 긁힘, 찍힘 등과 같은 불량 요소를 자동으로 검사하고 있습니다. 모듈기반의 설비는 산업용 표준 프로토콜과 산업용 유니버셜 커넥트를 기반으로 연결되어 있으며, 이곳에서 발생하는 데이터를 수집하여, 뒤쪽에 보이시는 바와 같이 가상 공장으로 구현해 놓았습니다. 위 화면은 게임엔진을 기반으로 구현하여 현실성 높은 가상 공장을 구현하였습니다. 실제 공장에서 발생한 데이터는 이곳으로 전송되며, 실시간으로 공장의 상태를 표현해 주고 있습니다. 옆쪽에 있는 시스템은 이곳 스마트제조혁신센터와 데이터를 연계하는 대표공장 동양피스톤의 공정이며, 데이터를 공유받아 쓰리디 시각화 시켜 놓고 있습니다.
     </div>
-
-    <nav class="tab-bar">
-        <div class="header_1">자동차 POC 라인</div>
-        <div class="header_2">
-            <audio autoplay controls>
-            <source src="1_demo.mp3" type="audio/mpeg">
+    <div class="footer">
+    	<div class="footer_item">
+    		<div class="header_1">자동차 POC 라인</div>
+    		<div class="header_2">
+            	<audio autoplay controls>
+            	<source src="1_demo.mp3" type="audio/mpeg">
                     Your user agent does not support the HTML5 Audio element.
-            </audio>
-        </div>
-        <div class="cont_1">
-            <a href="box.html" class="tab-bar__tab"><img src="img/previous.png" height="40px" align="left"></a>
-            <a href="description_2.html" class="tab-bar__tab"><img src="img/next.png" height="40px" align="right"></a>
-        </div>                     
-    </nav>
-   
+            	</audio>
+        	</div>
+        	<br />
+        	<div class="cont_1">
+            	<a href="box.html" class="tab-bar__tab"><img src="img/previous.png" height="40px" align="left"></a>
+            	<a href="description_2.html" class="tab-bar__tab"><img src="img/next.png" height="40px" align="right"></a>
+        	</div>
+    	</div>
+    </div>
 </body>
 </html>
+
+
+
