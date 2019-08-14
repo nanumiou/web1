@@ -32,14 +32,23 @@
 		.hear_item {
 			flex:10;
 		}
-		.article {
-			
+		.article {			
 		  	flex: 7;
 		 	overflow-y: scroll;
 		  	padding: 13px;
 		  	font-size: 1.1em;
-
+		  	animation: fadeIn 2s linear;
 		}
+			@keyframes fadeIn {
+		        from {
+		          opacity: 0;
+		          
+		        }
+		        to {
+		          opacity: 1;
+		          
+		      }
+		    }
 		.footer {
 		  flex: 2;
 		  text-align: center;
