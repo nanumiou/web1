@@ -71,3 +71,27 @@ audio {
     font-family: arial;
     padding-bottom: 2px;
 }
+
+.chat-btn {
+    opacity: 0.8;
+    width: 60px;
+    height: 60px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 180px;
+    font-size: 20px;
+    color: #523737;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: color .3s, background .3s, transform .5s ease-in-out;
+}
+
+.chat-btn:hover {
+    color: white;
+    background: #523737;
+    transform: rotateY(1turn);
+}
