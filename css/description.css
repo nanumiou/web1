@@ -69,7 +69,7 @@ audio {
 .header_1 {
     color: gray;
     font-family: arial;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
 }
 
 .chat-btn {
@@ -96,3 +96,4 @@ audio {
     background: #523737;
     transform: rotateY(1turn);
 }
+
