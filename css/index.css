@@ -1,0 +1,69 @@
+body {
+    background-color: #F2F2F2;
+    z-index: -2;
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn .5s linear;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+main {
+    animation: 1s bodyPopIn ease-in-out;
+}
+
+@keyframes bodyPopIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.title_1 {
+    font-size: 10vmin;
+    font-weight: bold;
+    font-family: arial;
+    color: white;
+    text-align: center;
+}
+
+.button1 {
+    width: 200px;
+    height: 110%;
+    font-size: 8vmin;
+    color: white;
+    background-color: #2E9AFE;
+    text-align: center;
+}
+
+.cont {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
