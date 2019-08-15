@@ -66,15 +66,15 @@ body {
 }
 
 .dot {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     background-color: #2E64FE;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
     color: white;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-left: 30px;
+    margin-right: 20px;
 }
 
 .bb {
@@ -84,8 +84,8 @@ body {
     border-bottom: 1px solid #ebebeb;
     box-sizing: border-box;
     background-color: ;
-    height: 120px;
-    line-height: 70px;
+    height: 160px;
+    line-height: 80px;
     text-align: left;
     font-size: 7vmin;
     margin: 0px;
