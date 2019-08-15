@@ -19,7 +19,7 @@ html, body {
 		  align-items: center;
 		  font-family: arial;
 		}
-		.hear_item {
+		.header_item {
 			flex:10;
 		}
 		.article {			
@@ -28,6 +28,7 @@ html, body {
 		  	padding: 13px;
 		  	font-size: 1.1em;
 		  	animation: fadeIn 1.5s linear;
+		  	color: #1C1C1C;
 		}
 			@keyframes fadeIn {
 		        from {
@@ -53,4 +54,9 @@ html, body {
         audio {
             width: 100%; 
             display: block;
+        }
+        .header_1 {
+        	color: gray;
+        	font-family: arial;
+        	padding-bottom: 2px;
         }
