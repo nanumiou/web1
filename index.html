@@ -6,38 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SMIC Audio Guide</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <style>
-    body {
-        min-height: 540px;
-    }
-
-    body[orient="portrait"] {
-        min-height: 540px;
-    }
-
-    body[orient="landscape"] {
-        min-height: 400px;
-    }
-    </style>
-    <script>
-    // onload 이벤트
-    window.onload = function() {
-        setTimeout(function() {
-            window.scrollTo(0, 1);
-        }, 100);
-    };    
-
-    // 안드로이드 버그 주소창 없애기
-    window.addEventListener('load', function() {
-        document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
-        window.scrollTo(0, 1);
-    }, false);
-    </script>
+    <link rel="stylesheet" href="css/index.css" />    
 </head>
 
 <body>
     <script src="bg.js"></script>
+    <script src="hidden.js"></script>
     <main>
         <div class="cont">
             <div class="title_1">SMIC Tour Guide</div>
