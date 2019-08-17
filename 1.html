@@ -11,7 +11,10 @@
  	 gtag('js', new Date());
 
  	 gtag('config', 'UA-142988417-1');
-
+	 window.addEventListener('load', function(){
+    	 document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
+    	 window.scrollTo(0, 1);
+	 }, false);	
 
  	
 	</script>
