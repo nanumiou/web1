@@ -11,6 +11,21 @@
  	 gtag('js', new Date());
 
  	 gtag('config', 'UA-142988417-1');
+
+
+ 	if (navigator.userAgent.indexOf('iPhone')!=-1)
+  	{
+   		addEventListener("load",function()
+    	{
+    	setTimeout(hideURLbar,0);
+    	},false);
+  	}
+// 위에껀 아이폰
+// 요 아래껀 다른폰
+  	function hideURLbar()
+  	{
+   		window.scrollTo(0,1);
+  	}
 	</script>
 	<link rel="stylesheet" href="style.css">
 </head>
